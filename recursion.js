@@ -6,3 +6,10 @@ function reduce(arr, func, initial) {
 	})(initial, 0);
 }
 module.exports = reduce;
+
+
+/* Example usage */
+function sum(memo, current, index, array) {
+	return memo + current;
+}
+reduce([1, 2, 3], sum, {});
