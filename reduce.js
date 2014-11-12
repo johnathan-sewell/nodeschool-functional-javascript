@@ -3,5 +3,5 @@ var countWords = function(words) {
 		memo[word] = (memo[word] || 0) + 1;
 		return memo;
 	}, {});
-}
+};
 module.exports = countWords;
