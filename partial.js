@@ -5,7 +5,7 @@ prepends a namespace string to its output.
 */
 function logger(namespace) {
 	return function(){
-        var args = [namespace].concat(Array.prototype.slice.call(arguments))
+        var args = [namespace].concat(Array.prototype.slice.call(arguments));
 		console.log.apply(console, args);
 	};
 }
